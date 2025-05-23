@@ -17,6 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+            
+      - name: Print directory tree
+        run: tree -L 3
 
       - name: Set up Node.js version
         uses: actions/setup-node@v3
